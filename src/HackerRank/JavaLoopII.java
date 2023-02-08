@@ -21,7 +21,6 @@ Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your Integers: ");
 int a = scanner.nextInt();
 int b = scanner.nextInt();
-
         System.out.println("Integers are " + a + " " + b);
     }
 }

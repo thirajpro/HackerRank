@@ -17,10 +17,10 @@ public class JavaLoopII {
 //        System.out.println("Enter a,b and n values: ");
 //        input = in.readLine().split("");
 
-Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your Integers: ");
-int a = scanner.nextInt();
-int b = scanner.nextInt();
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
         System.out.println("Integers are " + a + " " + b);
     }
 }

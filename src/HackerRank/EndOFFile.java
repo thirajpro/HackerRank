@@ -7,10 +7,15 @@ public class EndOFFile {
         Scanner scanner = new Scanner(System.in);
         String input = "";
         int count = 0;
-        while(!input.equals("end of the file")){
-             input = scanner.nextLine().toLowerCase();
+        while(scanner.hasNext()){
+             input = scanner.nextLine();
              count++;
             System.out.println(count +" " + input);
+            if (input.equals("Read me until end-of-file")){
+                break;
+            } else {
+                continue;
+            }
         }
     }
 }

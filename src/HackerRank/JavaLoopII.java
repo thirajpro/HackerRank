@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class JavaLoopII {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Number of Querries: ");
         int q = scanner.nextInt();
         for (int j = 1; j <= q; j++) {
             int a = scanner.nextInt();

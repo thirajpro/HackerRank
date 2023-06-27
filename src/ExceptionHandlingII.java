@@ -1,18 +1,23 @@
 import java.util.Scanner;
 
-public class ExceptionHandlingII {
+public class ExceptionHandlingII extends MyCalculator{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        for (int i = 0; i < 5; i++) {
-            int n = scan.nextInt();
-            int p = scan.nextInt();
-            if ((n == 0) && (p == 0)) {
-                System.out.println("java.lang.Exception: n and p should not be zero");
-            } else if ((n < 0) || (p < 0)) {
-                System.out.println("java.lang.Exception: n or p should not be negative");
-            } else {
-                System.out.println(((int) Math.pow(n, p)));
+        MyCalculator myCal = new MyCalculator();
+        try {
+            for (int i = 0; i < 10; i++) {
+                int x1 = scan.nextInt();
+                int x2 = scan.nextInt();
+                if ((x1 == 0) && (x2 == 0)) {
+                    System.out.println("java.lang.Exception: n and p should not be zero");
+                } else if ((x1 < 0) || (x2 < 0)) {
+                    System.out.println("java.lang.Exception: n or p should not be negative");
+                } else {
+                    System.out.println(myCal.power(x1, x2));
+                }
             }
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
 }
